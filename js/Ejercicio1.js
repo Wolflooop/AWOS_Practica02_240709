@@ -2,7 +2,7 @@
 const style_minimal = `
   background: #2c3e50;
   color: #f1ecf1;
-  border-left: 4px solid #3498db;
+  border-left: 4px solid #34db87;
   padding: 6px 12px;
   font-size: 1.1rem;
   font-family: monospace;
@@ -18,7 +18,7 @@ const style_neon = `
   font-family: 'Courier New', monospace;
   border: 1px solid #0ff;
   border-radius: 4px;
-  text-shadow: 0 0 10px #0ff;
+  text-shadow: 0 0 10px rgb(255, 145, 0);
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
 `;
 
