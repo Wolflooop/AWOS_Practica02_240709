@@ -21,3 +21,4 @@ Esta prácrica sera desarrollada con estructura de ramales, para el estudiante c
 |1. |Tipos de datos          | 2 |TERMINACIÓN|
 
 
+
