@@ -19,3 +19,4 @@ Esta prácrica sera desarrollada con estructura de ramales, para el estudiante c
 |---|-----------|-----------|-------|
 |1. |Declaracion de Variables| 1 |TERMINACIÓN|
 
+
