@@ -238,7 +238,7 @@ if(numero5 == numero9){
 /* 2. NULL (NULO) */
 
 /*Este tipo de datos es similar a UNDERFINED, con la diferencia de que los usuarios o si sistema es conciente que se le asigno este valor*/
-console.warn("6.- NULL (Indefinido)");
+console.warn("7.- NULL (Indefinido)");
 
 let isPremioUser;
 let isUserLoged;
