@@ -51,7 +51,7 @@ console.warn("3. Funciones que retornan un valor, pero no tienen parametros")
 let hoy = fechaActual();
 console.log("Bienvenid@ al Sistema de Bienes Raices, hoy es :",hoy);
 /* Imprimiendo el valor y que tipo de dato es:*/
-console.log(fechaActual());
+console.log(fechaActual);
 console.log(typeof(fechaActual()));
 console.log(hoy)
 
