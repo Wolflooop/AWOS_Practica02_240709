@@ -23,8 +23,8 @@ const style_neon = `
 `;
 
 
-console.log("%c Ejercicio 01",style_neon);
-console.log("%c Declaracion de Variables",style_minimal);
+console.log("%c Ejercicios",style_neon);
+console.log("%c Ejercicio 01: Declaracion de Variables",style_minimal);
 
 
 console.log(

@@ -1,9 +1,6 @@
 // Tipos de datos en Java Script
 
-const bg= "linear-gradient(45deg, rgba(52, 152, 219, 1) 0%, rgba(26, 188, 156, 1) 50%)";
-const style_console = `background: ${bg}; color:white; border-radius: 6px; padding:4px; font-size:1.0rem; font-weight:bold`
-
-console.log("%cEjercicio 02: Tipos de Datos ",style_console);
+console.log("%cEjercicio 02: Tipos de Datos ",style_minimal);
 
 // 1. Undefined - valor por defecto asignado a variables declaradas pero no inicializadas, no es igual a NULL.
 console.warn("1.-  UNDEFINED (No Definido)")
@@ -170,7 +167,7 @@ numeroGrande3 = ${numeroGrande3} , tipo de dato: ${typeof(numeroGrande3)}
 numeroGrande4 = ${numeroGrande4} , tipo de dato: ${typeof(numeroGrande4)}`
 );
 
-/*5. SYMBOL*/
+/*6. SYMBOL*/
 /*Es tipo de dato a parte de almacenar el valor, almacenado la direccion fisica en memoria donde se alamcena el valor integrado que todos
 los valores de cada variable siempre sean UNICOS*/
 
@@ -235,7 +232,7 @@ if(numero5 == numero9){
     console.log("Se comparo el valor numero5 y numero9 evaluando que son iguales en valor pero diferente tipo de dato")
 }
 
-/* 2. NULL (NULO) */
+/* 7. NULL (NULO) */
 
 /*Este tipo de datos es similar a UNDERFINED, con la diferencia de que los usuarios o si sistema es conciente que se le asigno este valor*/
 console.warn("7.- NULL (Indefinido)");
