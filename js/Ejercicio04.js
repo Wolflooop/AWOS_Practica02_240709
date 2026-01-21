@@ -152,11 +152,11 @@ const formatDatosMX = (Date)  => {
     return `${day}/${month}/${year} ${hours}:${minutes}:${seconds}`;
 }
 
-const buyerBid = (selier,buyer,property,price_bidded)  => {
-    const {userID : selierID, email: selierEmail} = selier;
-    const {userID : buyerID, email: buyerEmail} = buyer;
-    const {price, id } = property;
-    
+const buyerBid = (selier, buyer, property, price_bidded) => {
+    const { userID: selierID, email: selierEmail } = selier;
+    const { userID: buyerID, email: buyerEmail } = buyer;
+    const { price, id } = property;
+
     const fecha_oferta = new Date();
 
     console.log(`
@@ -164,17 +164,28 @@ const buyerBid = (selier,buyer,property,price_bidded)  => {
         (${selierEmail}) por la cantidad ofertada de: ${price_bidded}  por la propiedad con id: ${id}
         precio original: ${price}  con la fecha: ${formatDatosMX(fecha_oferta)}`);
 
-        const bid_accuracy = ((price - price_bidded) / price * 100).toFixed(2) + "%";
+    // 🔹 Cálculo de exactitud ajustado
+    const bid_accuracy_raw = (price_bidded / price) * 100;
 
-        return {
-            buyerID,
-            selierID,
-            propertyID: id,
-            propertyPrice: price,
-            date_bidded: fecha_oferta,
-            bid_accurate: bid_accuracy
-        };
+    let bid_accuracy = "";
+
+    if (bid_accuracy_raw <= 100) {
+        bid_accuracy = bid_accuracy_raw.toFixed(2) + "%";
+    } else {
+        const extra = bid_accuracy_raw - 100;
+        bid_accuracy = `100% cumplido + ${extra.toFixed(2)}% extra`;
+    }
+
+    return {
+        buyerID,
+        selierID,
+        propertyID: id,
+        propertyPrice: price,
+        date_bidded: fecha_oferta,
+        bid_accurate: bid_accuracy
+    };
 };
+
 
 //test 1. El usuario 2 realiza una oferta de 2500
 let bid1 = buyerBid(user1,user2,property1,2500);
